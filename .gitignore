@@ -1,0 +1,5 @@
+labs/*/.ok*
+labs/*/__pycache__/
+labs/*/*/__pycache__/
+homework/*/.ok*
+projects/*/.ok*

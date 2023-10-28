@@ -4,4 +4,13 @@
 - 1.4 Designing Functions
 - 1.5 Control
 - 1.6 Higher Order Functions
+    - using summation function as an example
+        - you can have multiple types of summations (depends on the expression you want)
+        - how do you remove all this boilerplate code like looping i=0, to n?
+        - the thing that changes (express) can be passed in as an argument. This expression is itself a function which takes in variables as an argument
+    - another example is calculating pi. You have multiple area formulas for different shapes, You can abstract it to area(radius, expression) where radius*radius*expression and expression is the function of the different shapes you want to pass in. 
+    - passing in functions as a parameter (higher order functions)
+    - returning functions
+        - 
+    - lambda functions
 - 1.7 Recursive Functions

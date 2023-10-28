@@ -11,6 +11,11 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
+    ans = 1
+    for i in range(n, n-k, -1):
+        ans *= i
+    print(ans)
+
 
 
 def divisible_by_k(n, k):
@@ -34,6 +39,7 @@ def divisible_by_k(n, k):
     0
     """
     "*** YOUR CODE HERE ***"
+    
 
 
 def sum_digits(y):
