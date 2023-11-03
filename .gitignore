@@ -1,5 +1,11 @@
 labs/*/.ok*
 labs/*/__pycache__/
 labs/*/*/__pycache__/
-homework/*/.ok*
+
 projects/*/.ok*
+projects/*/__pycache__/
+projects/*/*/__pycache__/
+
+homework/*/.ok*
+homework/*/__pycache__/
+homework/*/*/__pycache__/

@@ -10,7 +10,13 @@
         - the thing that changes (express) can be passed in as an argument. This expression is itself a function which takes in variables as an argument
     - another example is calculating pi. You have multiple area formulas for different shapes, You can abstract it to area(radius, expression) where radius*radius*expression and expression is the function of the different shapes you want to pass in. 
     - passing in functions as a parameter (higher order functions)
-    - returning functions
-        - 
+    - returning functions (higher order functions)
+    - Higher order functions allows you to abstract away computation, reduce reptitive code, almost recursive nature
+    - every function has a parent frame
+        - typically global frame
+        - an inner function points to parent frame
+        - this is how nested functions are evaluated
+            - if it can't find variable in current frame, look at parent frame
+            
     - lambda functions
 - 1.7 Recursive Functions
