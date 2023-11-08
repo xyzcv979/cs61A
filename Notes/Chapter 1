@@ -20,3 +20,34 @@
             
     - lambda functions
 - 1.7 Recursive Functions
+    - Mutual Recursion
+        - When recursive procedure is divided among 2 functions that call each other
+        - Example of mutual Recursion:
+        - 2 player game
+        - n pebbles on table, Alice and bob
+            - Alice takes single pebble
+            - Bob takes 2 pebbles if even num of pebbles, 1 otherwise
+        - Who wins?
+        - Use mutual recursion taking advantage of the turn based game by calling the other function when finishing
+        - Code:
+            - def play_alice(n):
+                if n == 0:
+                    print("bob wins")
+                else:
+                    play_bob(n-1)
+              
+              def play_bob(n):
+                if n == 0:
+                    print("alice wins")
+                elif is_even(n):
+                    play_alice(n-2)
+                else:
+                    play_alice(n-1)
+
+    - Tree Recursion
+        - when function calls itself more than once with a single line of code
+        - Example:
+            fib(n):
+                ...
+                return fib(n-2) + fib(n-1)
+        
