@@ -13,7 +13,7 @@ def my_map(fn, seq):
     2023
     [None, None, None]
     """
-    return ______
+    return [fn(i) for i in seq]
 
 def my_filter(pred, seq):
     """Keeps elements in seq only if they satisfy pred.
@@ -31,7 +31,7 @@ def my_filter(pred, seq):
     >>> my_filter(lambda x: max(5, x) == 5, [1, 2, 3, 4, 5, 6, 7])
     [1, 2, 3, 4, 5]
     """
-    return ______
+    return [i for i in seq if pred(i)]
 
 def my_reduce(combiner, seq):
     """Combines elements in seq using combiner.
@@ -46,6 +46,10 @@ def my_reduce(combiner, seq):
     11
     """
     "*** YOUR CODE HERE ***"
+    ans = 0
+    for i in seq:
+        ans = combiner(ans, i)
+    return ans
 
 def my_map_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
@@ -90,7 +94,11 @@ def double_eights(n):
     True
     """
     "*** YOUR CODE HERE ***"
-
+    if n < 10:
+        return False
+    if (n % 10) == (n // 10 % 10) and (n % 10) == 8:
+        return True
+    return double_eights(n // 10) 
 
 def merge(lst1, lst2):
     """Merges two sorted lists.
@@ -117,6 +125,16 @@ def merge(lst1, lst2):
     True
     """
     "*** YOUR CODE HERE ***"
+    if lst1 == []:
+        return lst2
+    if lst2 == []:
+        return lst1
+    
+    if lst1[0] <= lst2[0]:
+        return [lst1[0]] + merge(lst1[1:], lst2)
+    else:
+        return [lst2[0]] + merge(lst1, lst2[1:])
+    
 
 
 def summation(n, term):
@@ -138,6 +156,9 @@ def summation(n, term):
     """
     assert n >= 1
     "*** YOUR CODE HERE ***"
+    if n == 0:
+        return 0
+    return term(n) + summation(n-1, term)
 
 
 def count_palindromes(L):
@@ -147,5 +168,5 @@ def count_palindromes(L):
     >>> count_palindromes(("Acme", "Madam", "Pivot", "Pip"))
     2
     """
-    return ______
+    return len(list(filter(lambda x: x.lower() == x[::-1].lower(), L)))
 
