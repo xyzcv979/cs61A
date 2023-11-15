@@ -5,4 +5,4 @@ UC Berkeley's CS61A course
 
 [Textbook - SCIP in python](https://www.composingprograms.com/)
 
-TODO: lab 04, ch 2.1,2.3, 9/18, hw 03 
+TODO: ch 2.4, 9/27, disc 05, ch 4.2, 9/29
