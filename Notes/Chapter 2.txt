@@ -1,0 +1,24 @@
+2.1: Introduction
+
+2.2: Data Abstraction
+    - data abstraction allows us to use objects in code that represent a compound value
+    - using the example of rational numbers
+        - rational_nums(numerator, denominator):
+            # the params can be implemented however you want, but it's abstracted away
+
+2.3: Sequences
+    - slicing
+    - list comprehensions
+
+2.4: Mutable Data
+    - mutable vs immutable
+        - mutable types cannot be used as key for hashmap
+        - immutable types like tuple can. They are protected from being changed after assignment
+    - Objects - instances of class
+    - 2 diff named variables referencing the same object. Changes happen for both because they point to same reference
+    - nonlocal variable allows objects to keep their own state 
+        - nonlocal stmt indicates the name is found somewhere not the local frame
+    - can also use mutable value for object to keep state
+        - like using a list
+
+2.5

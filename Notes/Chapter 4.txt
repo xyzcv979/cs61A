@@ -1,0 +1,24 @@
+4.1
+4.2 Implicit sequences
+    - Iterators move through a sequence when calling next()
+    - container can provide iterator to access its elements in some order
+    - functions:
+        - iter(iterable): return iterator over the elements of the iterable value
+        - next(iterator): Return next element in iterator
+        - example
+            s = [3,5,4]
+            t = iter(s)
+            next(t) # 3
+            next(t) # 5
+        - iterator functions
+            - map(func, values) - for every val in values, apply func(val) 
+            - filter(func, values) - for every val in values, output only if func(value) == True
+            - zip(x, y)
+            - reduce(..)
+    - magic methods:
+        - __iter__
+            - iterables. Iterating an object
+        - __next__
+            - yield stmt indicates we are defining a generator function
+            - program executes statements until yield function, when __next__ is called again, it resumes where it left off
+    - generator function - uses yield stmt to return elements
