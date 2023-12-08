@@ -5,4 +5,4 @@ UC Berkeley's CS61A course
 
 [Textbook - SCIP in python](https://www.composingprograms.com/)
 
-TODO: Cats project, hw 04, 10/2
+TODO: hw 04, 10/2
